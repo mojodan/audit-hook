@@ -16,6 +16,7 @@ public class AuditController {
 
     @GetMapping("greeting")
     public String getMethodName() {
+        System.out.println("basic greeting");
         return "Hello World from Codespaces";
     }
 
