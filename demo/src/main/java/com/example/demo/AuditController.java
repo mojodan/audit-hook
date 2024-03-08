@@ -14,6 +14,13 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 public class AuditController {
 
+    // GET endpoint at / that returns a simple greeting
+    @GetMapping(value = {"/", ""})
+    public String getGreeting() {
+        return "Hello Ping";
+    }
+    
+
     @GetMapping("greeting")
     public String getMethodName() {
         System.out.println("basic greeting");
